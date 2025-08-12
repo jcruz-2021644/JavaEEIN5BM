@@ -32,9 +32,9 @@
                 </ul>
                 <div class="iconos">
                     <a href="#"><i class="fa fa-search"></i></a>
-                    <a href="mispedidos.jsp"><i class="fa fa-shopping-cart"></i></a>
-                    <a href="Index/VistaUsuarioCliente.jsp" class="logo-usuario">
-                        <img src="../Images/Logo_K.C.png" alt="Usuario">
+                    <a href="${pageContext.request.contextPath}/Index/mispedidos.jsp"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="${pageContext.request.contextPath}/Index/VistaUsuarioCliente.jsp" class="logo-usuario">
+                        <img src="${pageContext.request.contextPath}/Images/Logo_K.C.png" alt="Usuario">
                     </a>
                 </div>
             </div>
