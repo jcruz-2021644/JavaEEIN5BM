@@ -19,7 +19,7 @@
             <div class="nav-content">
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
-                   <li><a href="${pageContext.request.contextPath}/Index/vistaadmin.jsp">Menu</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/vistaadmin.jsp">Menu</a></li>
                     <li><a href="${pageContext.request.contextPath}/Index/vistaclientesadmin.jsp">Cliente</a></li>
                     <li><a href="${pageContext.request.contextPath}/Index/vistaproveedoradmin.jsp">Proveedor</a></li>
                     <li><a href="${pageContext.request.contextPath}/Index/vistacategoria.jsp">Categoria</a></li>
@@ -42,31 +42,30 @@
                     <form>
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtNombreEmpleado" required>
+                                <input type="text" class="txtNombreEmpleado" id="txtNombreEmpleado" required>
                                 <label class="label-input">Nombre Empleado</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtApellidoEmpleado" required>
+                                <input type="text" class="txtApellidoEmpleado" id="txtApellidoEmpleado" required>
                                 <label class="label-input">Apellido Empleado</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtCorreoEmpleado" required>
+                                <input type="text" class="txtCorreoEmpleado" id="txtCorreoEmpleado" required>
                                 <label class="label-input">Correo</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtTelefonoEmpleado" required>
+                                <input type="text" class="txtTelefonoEmpleado" id="txtTelefonoEmpleado" required>
                                 <label class="label-input">Telefono</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtDireccionEmpleado" required>
+                                <input type="text" class="txtDireccionEmpleado" id="txtDireccionEmpleado" required>
                                 <label class="label-input">Dirección</label>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="entrada_texto" name="stock" min="0" placeholder="0"
+                                <input type="number" class="stock" name="stock" min="0" placeholder="0"
                                        required id="numCodigoUsuario">
                                 <label class="label-input-number">Codigo de Usuario</label>
                             </div>
-
 
                             <button type="button" class="btn_crear_producto">
                                 <span class="bnt_texto">Crear Empleado</span>
