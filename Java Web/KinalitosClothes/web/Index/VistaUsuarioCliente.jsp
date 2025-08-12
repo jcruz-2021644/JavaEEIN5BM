@@ -13,7 +13,7 @@
             <div class="nav-content">
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
-                    <li><a href="menu.jsp">Inicio</a></li>
+                    <li><a href=Principal.jsp">Inicio</a></li>
                 </ul>
             </div>  
         </nav>

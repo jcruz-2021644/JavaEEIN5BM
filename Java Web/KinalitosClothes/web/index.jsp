@@ -49,22 +49,24 @@
 
                                 <div class="card-3d-wrap">
                                     <div class="card-3d-wrapper">
-
+                                        <!-- FORMULARIO DE LOGIN -->
                                         <div class="card-front">
                                             <div class="center-wrap">
-                                                <form action="LoginServlet" method="post">
+                                                <form action="Validar" method="POST">
                                                     <h4 class="heading">Inicio de Sesión</h4>
                                                     <div class="form-group">
-                                                        <input type="text" name="usuario" id="usuario_login" class="form-style" placeholder="Usuario" autocomplete="off" required>
+                                                        <input type="text" name="txtCorreo" id="usuario_login" class="form-style" placeholder="Correo" required>
                                                         <i class="input-icon material-icons">perm_identity</i>
                                                     </div>
                                                     <div class="form-group">
-                                                        <input type="password" name="password" id="password_login" class="form-style" placeholder="Contraseña" autocomplete="off" required>
+                                                        <input type="password" name="txtPass" id="password_login" class="form-style" placeholder="Contraseña" required>
                                                         <i class="input-icon material-icons">lock</i>
                                                     </div>
-                                                    <button type="submit" class="btnIniciar">Entrar</button>
+                                                    <center>
+                                                        <input type="submit" class="btnIniciar" name="accion" value="Ingresar" placeholder="Entrar">
+                                                    </center>
                                                     <p class="text-center">
-                                                        <a href="Index/menu.jsp" class="link">No te recuerdas de tu contraseña???</a>
+                                                        <a href="Index/Principal.jsp" class="link">No te recuerdas de tu contraseña???</a>
                                                     </p>
                                                 </form>
                                             </div>

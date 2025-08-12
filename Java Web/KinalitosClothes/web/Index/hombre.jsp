@@ -17,7 +17,7 @@
             <div class="nav-content">
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
-                    <li><a href="menu.jsp">INICIO</a></li>
+                    <li><a href="Principal.jsp">INICIO</a></li>
                     <li><a href="conocenos.jsp">NOSOTROS</a></li>
                     <li><a href="vistaadmin.jsp">ADMINISTRACION</a></li>
                 </ul>

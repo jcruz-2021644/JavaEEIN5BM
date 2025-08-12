@@ -713,6 +713,9 @@ Delimiter //
 Delimiter ;
 call sp_ListarEmpleados();
 
+
+
+
 -- Eliminar Cliente
 Delimiter //
 	Create procedure sp_EliminarEmpleado(

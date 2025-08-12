@@ -24,7 +24,7 @@
                 <div class="container">
                     <nav>
                         <ul class="menu">
-                            <li><a href="menu.jsp">INICIO</a></li>
+                            <li><a href="Principal.jsp">INICIO</a></li>
                             <li><a href="vistaproducto.jsp">TIENDA</a></li>
                             <li><a href="vistaadmin.jsp">ADMINISTRACION</a></li>
                         </ul>
