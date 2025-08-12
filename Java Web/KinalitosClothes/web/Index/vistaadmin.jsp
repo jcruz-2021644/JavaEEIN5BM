@@ -23,8 +23,7 @@
             <div class="nav-content">
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
-                    <li><a href="Principal.jsp">INICIO</a></li>
-                </ul>
+                    <li><a href="${pageContext.request.contextPath}/Index/Principal.jsp">INICIO</a></li>>
             </div>
         </nav>
 
@@ -42,7 +41,7 @@
                     <h3 class="card-title">Cliente</h3>
                     <p class="card-description">Gestiona la información de Clientes, como agregar, listar, actualizar,
                         eliminar.</p>
-                    <a href="vistaclientesadmin.jsp" class="btn_ver_gestion">Gestionar Cliente</a>
+                    <a href="${pageContext.request.contextPath}/Index/vistaclientesadmin.jsp" class="btn_ver_gestion">Gestionar Cliente</a>
                 </div>
 
                 <div class="admin-card">
@@ -51,7 +50,7 @@
                     <h3 class="card-title">Proveedor</h3>
                     <p class="card-description">Gestiona la información de los Proveedores, como agregar, listar,
                         actualizar, eliminar.</p>
-                    <a href="vistaproveedoradmin.jsp" class="btn_ver_gestion">Gestionar Proveedores</a>
+                    <a href="${pageContext.request.contextPath}/Index/vistaproveedoradmin.jsp" class="btn_ver_gestion">Gestionar Proveedores</a>
                 </div>
 
                 <div class="admin-card">
@@ -60,7 +59,7 @@
                     <h3 class="card-title">Categoría</h3>
                     <p class="card-description">Gestiona la información de Categoria, como agregar, listar, actualizar,
                         eliminar.</p>
-                    <a href="vistacategoria.jsp" class="btn_ver_gestion">Gestionar Categorías</a>
+                    <a href="${pageContext.request.contextPath}/Index/vistacategoria.jsp" class="btn_ver_gestion">Gestionar Categorías</a>
                 </div>
 
                 <div class="admin-card">
@@ -69,7 +68,7 @@
                     <h3 class="card-title">Método Pago</h3>
                     <p class="card-description">Gestiona la información de Metodo Pago, como agregar, listar, actualizar,
                         eliminar.</p>
-                    <a href="metodopagoadmin.jsp" class="btn_ver_gestion">Gestionar Metodo Pagos</a>
+                    <a href="${pageContext.request.contextPath}/Index/metodopagoadmin.jsp" class="btn_ver_gestion">Gestionar Metodo Pagos</a>
                 </div>
 
                 <div class="admin-card">
@@ -79,7 +78,7 @@
                     <p class="card-description">Gestiona la información de Usuarios, como agregar, listar, actualizar,
                         eliminar.
                     </p>
-                    <a href="VistaUsuarioAdmin.jsp" class="btn_ver_gestion">Gestionar Usuarios</a>
+                    <a href="${pageContext.request.contextPath}/Index/VistaUsuarioAdmin.jsp" class="btn_ver_gestion">Gestionar Usuarios</a>
                 </div>
 
                 <div class="admin-card">
@@ -90,7 +89,7 @@
                     <p class="card-description">
                         Gestiona la información de Productos, como agregar, listar, actualizar, eliminar.
                     </p>
-                    <a href="vistaproductoadmin.jsp" class="btn_ver_gestion">Gestionar Productos</a>
+                    <a href="${pageContext.request.contextPath}/Index/vistaproductoadmin.jsp" class="btn_ver_gestion">Gestionar Productos</a>
                 </div>
 
                 <div class="admin-card">
@@ -100,7 +99,7 @@
                     <p class="card-description">Gestiona la información de Pedido, como agregar, listar, actualizar,
                         eliminar.
                     </p>
-                    <a href="vistapedidoadmin.jsp" class="btn_ver_gestion">Gestionar Pedidos</a>
+                    <a href="${pageContext.request.contextPath}/Index/vistapedidoadmin.jsp" class="btn_ver_gestion">Gestionar Pedidos</a>
                 </div>
 
                 <div class="admin-card">
@@ -109,7 +108,7 @@
                     <h3 class="card-title">Detalle Pedido</h3>
                     <p class="card-description">Gestiona la información de Detalle Pedido, como agregar, listar, actualizar,
                         eliminar.</p>
-                    <a href="vistadetallepedidoadmin.jsp" class="btn_ver_gestion">Gestionar Detalle Pedido</a>
+                    <a href="${pageContext.request.contextPath}/Index/vistadetallepedidoadmin.jsp" class="btn_ver_gestion">Gestionar Detalle Pedido</a>
                 </div>
 
                 <div class="admin-card">
@@ -118,7 +117,7 @@
                     <h3 class="card-title">Factura</h3>
                     <p class="card-description">Gestiona la información de Factura, como agregar, listar, actualizar,
                         eliminar.</p>
-                    <a href="VistaFacturaAdmin.jsp" class="btn_ver_gestion">Gestionar Facturas</a>
+                    <a href="${pageContext.request.contextPath}/Index/VistaFacturaAdmin.jsp" class="btn_ver_gestion">Gestionar Facturas</a>
                 </div>
 
                 <div class="admin-card">
@@ -128,7 +127,7 @@
                     <p class="card-description">Gestiona la información del Empleado, como agregar, listar, actualizar,
                         eliminar.
                     </p>
-                    <a href="vistaempleadoadmin.jsp" class="btn_ver_gestion">Gestionar Empleados</a>
+                    <a href="${pageContext.request.contextPath}/Index/vistaempleadoadmin.jsp" class="btn_ver_gestion">Gestionar Empleados</a>
                 </div>
             </div>
         </div>

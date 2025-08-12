@@ -12,8 +12,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>K.C - Inicio</title>
-        <link rel="icon" type="image/x-icon" href="Images/Logo_K.C.png">
-        <link rel="stylesheet" href="Styles/principal.css">
+        <link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/Images/Logo_K.C.png">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/Styles/principal.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     </head>
@@ -24,16 +24,16 @@
             <div class="nav-content">
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
-                    <li><a href="index.jsp">INICIO</a></li>
-                    <li><a href="conocenos.jsp">NOSOTROS</a></li>
-                    <li><a href="Index/vistaproducto.jsp">TIENDA</a></li>
-                    <li><a href="vistaadmin.jsp">ADMINISTRACION</a></li>
-                    <li><a href="mispedidos.jsp">MIS PEDIDOS</a></li>
+                    <li><a href="${pageContext.request.contextPath}/index.jsp">INICIO</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/conocenos.jsp">NOSOTROS</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/vistaproducto.jsp">TIENDA</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/vistaadmin.jsp">ADMINISTRACION</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/mispedidos.jsp">MIS PEDIDOS</a></li>
                 </ul>
                 <div class="iconos">
                     <a href="#"><i class="fa fa-search"></i></a>
                     <a href="mispedidos.jsp"><i class="fa fa-shopping-cart"></i></a>
-                    <a href="VistaUsuarioCliente.jsp" class="logo-usuario">
+                    <a href="Index/VistaUsuarioCliente.jsp" class="logo-usuario">
                         <img src="../Images/Logo_K.C.png" alt="Usuario">
                     </a>
                 </div>

@@ -37,7 +37,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 30px;
     width: 100%;
 }
 
@@ -63,7 +62,7 @@ body {
     margin: 0;
     padding: 0;
     flex: 1;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .menu li a {

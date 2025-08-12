@@ -15,9 +15,9 @@
         <nav class="nav">
             <a href="#" class="logo">KC</a>
             <ul class="nav-links">
-                <li><a href="Principal.jsp">INICIO</a></li>
-                <li><a href="vistaproducto.jsp">TIENDA</a></li>
-                <li><a href="conocenos.jsp">NOSOTROS</a></li>
+                <li><a href="${pageContext.request.contextPath}/Index/Principal.jsp">INICIO</a></li>
+                <li><a href="${pageContext.request.contextPath}/Index/vistaproducto.jsp">TIENDA</a></li>
+                <li><a href="${pageContext.request.contextPath}/Index/conocenos.jsp">NOSOTROS</a></li>
             </ul>
         </nav>
     </header>
