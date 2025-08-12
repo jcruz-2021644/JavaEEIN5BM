@@ -22,7 +22,6 @@
         <nav class="navbar">
             <div class="container">
                 <div class="logo">K<span>C</span></div>
-
             </div>
         </nav>
 
@@ -35,8 +34,7 @@
                         <p>Encuentra toda tu ropa a buenos precios</p>
                         <a href="https://wa.link/cp8m9x" class="btnContacto">Contactanos</a>
                         <div class="redes-sociales">
-                            <a href="https://www.facebook.com/"><i
-                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                             <a href="https://discord.gg/K5C57rwJGM"><i class="fa-brands fa-discord"></i></a>
                         </div>
@@ -48,54 +46,60 @@
                                 <h6><span>Log in </span> <span>Sign up</span></h6>
                                 <input type="checkbox" class="checkbox" id="reg-log">
                                 <label for="reg-log"></label>
+
                                 <div class="card-3d-wrap">
                                     <div class="card-3d-wrapper">
+
                                         <div class="card-front">
                                             <div class="center-wrap">
-                                                <h4 class="heading">Inicio de Sesion</h4>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-style" placeholder="Usuario"
-                                                           autocomplete="off">
-                                                    <i class="input-icon material-icons">perm_identity</i>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="password" class="form-style" placeholder="Contraseña"
-                                                           autocomplete="off">
-                                                    <i class="input-icon material-icons">lock</i>
-                                                </div>
-                                                <a href="Index/menu.jsp" class="btnIniciar">Entrar</a>
-                                                <p class="text-center"><a href="#" class="link">No te recuerdas de tu
-                                                        contraseña???</a></p>
+                                                <form action="LoginServlet" method="post">
+                                                    <h4 class="heading">Inicio de Sesión</h4>
+                                                    <div class="form-group">
+                                                        <input type="text" name="usuario" id="usuario_login" class="form-style" placeholder="Usuario" autocomplete="off" required>
+                                                        <i class="input-icon material-icons">perm_identity</i>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" name="password" id="password_login" class="form-style" placeholder="Contraseña" autocomplete="off" required>
+                                                        <i class="input-icon material-icons">lock</i>
+                                                    </div>
+                                                    <button type="submit" class="btnIniciar">Entrar</button>
+                                                    <p class="text-center">
+                                                        <a href="Index/menu.jsp" class="link">No te recuerdas de tu contraseña???</a>
+                                                    </p>
+                                                </form>
                                             </div>
                                         </div>
 
                                         <div class="card-back">
                                             <div class="center-wrap">
-                                                <h4 class="heading">Registrarse</h4>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-style" placeholder="Usuario"
-                                                           autocomplete="off">
-                                                    <i class="input-icon material-icons">perm_identity</i>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="password" class="form-style" placeholder="Contraseña"
-                                                           autocomplete="off">
-                                                    <i class="input-icon material-icons">lock</i>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="password" class="form-style" placeholder="Confirmar contraseña"
-                                                           autocomplete="off">
-                                                    <i class="input-icon material-icons">lock</i>
-                                                </div>
-                                                <a href="#" class="btnRegistrar">Registrarme</a>
+                                                <form action="RegistroServlet" method="post">
+                                                    <h4 class="heading">Registrarse</h4>
+                                                    <div class="form-group">
+                                                        <input type="text" name="usuario" id="usuario_registro" class="form-style" placeholder="Usuario" autocomplete="off" required>
+                                                        <i class="input-icon material-icons">perm_identity</i>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" name="password" id="password_registro" class="form-style" placeholder="Contraseña" autocomplete="off" required>
+                                                        <i class="input-icon material-icons">lock</i>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" name="confirmar" id="confirmar_registro" class="form-style" placeholder="Confirmar contraseña" autocomplete="off" required>
+                                                        <i class="input-icon material-icons">lock</i>
+                                                    </div>
+                                                    <button type="submit" class="btnRegistrar">Registrarme</button>
+                                                </form>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
+
                 </div>
+            </div>
         </section>
     </body>
 
