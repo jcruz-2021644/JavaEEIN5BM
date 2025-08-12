@@ -42,27 +42,27 @@
                     <form>
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" class="txtNombreEmpleado" id="txtNombreEmpleado" required>
+                                <input type="text" class="entrada_texto" name="txtNombreEmpleado" id="txtNombreEmpleado" required>
                                 <label class="label-input">Nombre Empleado</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="txtApellidoEmpleado" id="txtApellidoEmpleado" required>
+                                <input type="text" class="entrada_texto" name="txtApellidoEmpleado" id="txtApellidoEmpleado" required>
                                 <label class="label-input">Apellido Empleado</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="txtCorreoEmpleado" id="txtCorreoEmpleado" required>
+                                <input type="text" class="entrada_texto" name="txtCorreoEmpleado" id="txtCorreoEmpleado" required>
                                 <label class="label-input">Correo</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="txtTelefonoEmpleado" id="txtTelefonoEmpleado" required>
+                                <input type="text" class="entrada_texto" name="txtTelefonoEmpleado" id="txtTelefonoEmpleado" required>
                                 <label class="label-input">Telefono</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="txtDireccionEmpleado" id="txtDireccionEmpleado" required>
+                                <input type="text" class="entrada_texto" name="txtDireccionEmpleado" id="txtDireccionEmpleado" required>
                                 <label class="label-input">Dirección</label>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="stock" name="stock" min="0" placeholder="0"
+                                <input type="number" class="entrada_texto" name="stock" min="0" placeholder="0"
                                        required id="numCodigoUsuario">
                                 <label class="label-input-number">Codigo de Usuario</label>
                             </div>
