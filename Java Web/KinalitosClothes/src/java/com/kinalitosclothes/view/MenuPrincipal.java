@@ -1,11 +1,10 @@
 package com.kinalitosclothes.view;
 
-import com.kinalitosclothes.model.*;
 
 import java.util.Scanner;
 
 public class MenuPrincipal {
-
+/*
     public void mostrarMenu() {
         Scanner leer = new Scanner(System.in);
         int op = -1;
@@ -84,5 +83,5 @@ public class MenuPrincipal {
                 e.printStackTrace();
             }
         } while (op != 0);
-    }
+    }*/
 }

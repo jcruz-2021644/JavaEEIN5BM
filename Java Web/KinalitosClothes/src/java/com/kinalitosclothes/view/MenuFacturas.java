@@ -4,7 +4,7 @@ import com.kinalitosclothes.modelo.FacturasDAO;
 import java.util.Scanner;
 
 public class MenuFacturas {
-
+/*
     public void MenuFacturas() {
         Scanner leer = new Scanner(System.in);
         int op = 1;
@@ -45,5 +45,5 @@ public class MenuFacturas {
             }
         }
 
-    }
+    }*/
 }

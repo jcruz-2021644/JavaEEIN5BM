@@ -4,7 +4,7 @@ import com.kinalitosclothes.modelo.ProductosDAO;
 import java.util.Scanner;
 
 public class MenuProducto {
-
+/*
     public void MenuProductos() {
         Scanner leer = new Scanner(System.in);
         int op = -1;
@@ -56,6 +56,6 @@ public class MenuProducto {
                 leer.nextLine();
             }
         } while (op != 0);
-    }
+    }*/
 }
 

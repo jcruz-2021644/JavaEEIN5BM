@@ -4,7 +4,7 @@ import com.kinalitosclothes.modelo.EmpleadosDAO;
 import java.util.Scanner;
 
 public class MenuEmpleado {
-
+/*
     private static final Scanner sc = new Scanner(System.in);
 
     public void mostrarMenu() {
@@ -31,5 +31,5 @@ public class MenuEmpleado {
                 default -> System.out.println("******* Opción no válida *******");
             }
         } while (opcion != 6);
-    }
+    }*/
 }

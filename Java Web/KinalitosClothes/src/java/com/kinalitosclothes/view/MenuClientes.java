@@ -4,7 +4,7 @@ import java.util.Scanner;
 import com.kinalitosclothes.modelo.ClientesDAO;
 
 public class MenuClientes {
-
+/*
     public void menuClientes() {
         Scanner leer = new Scanner(System.in);
         int op = 1;
@@ -47,5 +47,5 @@ public class MenuClientes {
                     System.out.println("Por favor seleccione una de las opciones válidas.");
             }
         }
-    }
+    }*/
 }

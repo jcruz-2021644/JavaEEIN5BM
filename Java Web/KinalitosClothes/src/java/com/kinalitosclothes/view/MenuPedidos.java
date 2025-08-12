@@ -4,7 +4,7 @@ import com.kinalitosclothes.modelo.PedidosDAO;
 import java.util.Scanner;
 
 public class MenuPedidos {
-
+/*
     public void MenuPedidos() {
         Scanner leer = new Scanner(System.in);
         int op = -1;
@@ -56,5 +56,5 @@ public class MenuPedidos {
                 leer.nextLine();
             }
         } while (op != 0);
-    }
+    }*/
 }

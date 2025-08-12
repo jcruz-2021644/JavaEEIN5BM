@@ -4,7 +4,7 @@ import java.util.Scanner;
 import com.kinalitosclothes.modelo.CategoriasDAO;
 
 public class MenuCategorias {
-
+/*
     public void menuCategorias() {
         Scanner leer = new Scanner(System.in);
         int op = 1;
@@ -47,5 +47,5 @@ public class MenuCategorias {
                     System.out.println("Por favor seleccione una de las opciones válidas.");
             }
         }
-    }
+    }*/
 }

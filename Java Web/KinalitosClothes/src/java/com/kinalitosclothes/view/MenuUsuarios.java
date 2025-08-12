@@ -4,7 +4,7 @@ import java.util.Scanner;
 import com.kinalitosclothes.modelo.UsuariosDAO;
 
 public class MenuUsuarios {
-
+/*
     public void menuUsuarios() {
         Scanner leer = new Scanner(System.in);
         int op = 1;
@@ -47,5 +47,5 @@ public class MenuUsuarios {
             }
         }
 
-    }
+    }*/
 }

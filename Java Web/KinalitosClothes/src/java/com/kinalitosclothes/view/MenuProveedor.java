@@ -5,7 +5,7 @@ import com.kinalitosclothes.modelo.ProveedoresDAO;
 import java.util.Scanner;
 
 public class MenuProveedor {
-
+/*
     private static final Scanner sc = new Scanner(System.in);
 
     public void mostrarMenu() {
@@ -34,5 +34,5 @@ public class MenuProveedor {
             }
 
         } while (opcion != 6);
-    }
+    }*/
 }

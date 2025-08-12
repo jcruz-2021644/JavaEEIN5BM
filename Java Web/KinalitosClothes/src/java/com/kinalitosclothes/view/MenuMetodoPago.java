@@ -4,7 +4,7 @@ import com.kinalitosclothes.modelo.MetodoPagosDAO;
 import java.util.Scanner;
 
 public class MenuMetodoPago {
-
+/*
     public void menuMetodoPagos() {
         Scanner leer = new Scanner(System.in);
         int op = 1;
@@ -47,5 +47,5 @@ public class MenuMetodoPago {
                     System.out.println("Por favor seleccione una de las opciones válidas.");
             }
         }
-    }
+    }*/
 }
