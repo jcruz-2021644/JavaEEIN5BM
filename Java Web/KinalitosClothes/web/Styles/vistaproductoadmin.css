@@ -37,6 +37,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 30px;
     width: 100%;
 }
 
@@ -62,7 +63,7 @@ body {
     margin: 0;
     padding: 0;
     flex: 1;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .menu li a {
@@ -671,7 +672,7 @@ tr:hover {
     .nav-content {
         padding: 15px 20px;
     }
-    
+
     .table-container {
         margin-top: 20px;
     }

@@ -17,7 +17,15 @@
             <div class="nav-content">
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaadmin.jsp">Menu Administrador</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/vistaadmin.jsp">Menu</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/vistaclientesadmin.jsp">Cliente</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/vistacategoria.jsp">Categoria</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/metodopagoadmin.jsp">Metodo P.</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/vistaproductoadmin.jsp">Producto</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/vistapedidoadmin.jsp">Pedido</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/vistadetallepedidoadmin.jsp">Detalle P.</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/VistaFacturaAdmin.jsp">Factura</a></li>
+                    <li><a href="${pageContext.request.contextPath}/Index/vistaempleadoadmin.jsp">Empleado</a></li>
                 </ul>
             </div>
         </nav>

@@ -24,16 +24,10 @@
                     <li><a href="${pageContext.request.contextPath}/Index/vistaproveedoradmin.jsp">Proveedor</a></li>
                     <li><a href="${pageContext.request.contextPath}/Index/vistacategoria.jsp">Categoria</a></li>
                     <li><a href="${pageContext.request.contextPath}/Index/metodopagoadmin.jsp">Metodo P.</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaproductoadmin.jsp">Producto</a></li>
                     <li><a href="${pageContext.request.contextPath}/Index/vistapedidoadmin.jsp">Pedido</a></li>
                     <li><a href="${pageContext.request.contextPath}/Index/vistadetallepedidoadmin.jsp">Detalle P.</a></li>
                     <li><a href="${pageContext.request.contextPath}/Index/VistaFacturaAdmin.jsp">Factura</a></li>
                     <li><a href="${pageContext.request.contextPath}/Index/vistaempleadoadmin.jsp">Empleado</a></li>
-
-
-
-
-
                 </ul>
             </div>
         </nav>

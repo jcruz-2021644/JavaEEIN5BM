@@ -64,7 +64,6 @@
                     <div class="detalle-subtotal">Q 106.00</div>
                 </div>
 
-                <!-- Puedes agregar más detalles copiando la estructura de arriba -->
             </div>
         </div>
     </body>
