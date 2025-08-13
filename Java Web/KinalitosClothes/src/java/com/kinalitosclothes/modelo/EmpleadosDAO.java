@@ -4,9 +4,11 @@ import com.kinalitosclothes.config.Conexion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EmpleadosDAO {
-    
+
     Conexion cn = new Conexion();
     Connection con;
     PreparedStatement ps;
@@ -37,4 +39,48 @@ public class EmpleadosDAO {
         }
         return empleado;
     }
+
+    public List listar() {
+        String sql = "call sp_ListarEmpleados();";
+        List<Empleados> listaEmpleados = new ArrayList<>();
+        try {
+            con = cn.Conexion();
+            ps = con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Empleados em = new Empleados();
+                em.setCodigoEmpleado(rs.getInt(1));
+                em.setNombreEmpleado(rs.getString(2));
+                em.setApellidoEmpleado(rs.getString(3));
+                em.setCorreoEmpleado(rs.getString(4));
+                em.setTelefonoEmpleado(rs.getString(5));
+                em.setDireccionEmpleado(rs.getString(6));
+                em.setCodigoUsuario(rs.getInt(7));
+                listaEmpleados.add(em);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return listaEmpleados;
+    }
+
+    public int agregar(Empleados emp) {
+        String sql = "call sp_AgregarEmpleado(?, ?, ?, ?, ?, ?);";
+        try {
+            con = cn.Conexion();
+            ps = con.prepareStatement(sql);
+            ps.setString(1, emp.getNombreEmpleado());
+            ps.setString(2, emp.getApellidoEmpleado());
+            ps.setString(3, emp.getCorreoEmpleado());
+            ps.setString(4, emp.getTelefonoEmpleado());
+            ps.setString(5, emp.getDireccionEmpleado());
+            ps.setInt(6, emp.getCodigoUsuario());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return resp;
+
+    }
+
 }

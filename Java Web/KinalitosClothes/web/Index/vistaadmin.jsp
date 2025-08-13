@@ -14,7 +14,7 @@
         <title>KC Admin - Panel de Control</title>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700;900&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="../Images/Logo_K.C.png">
-        <link rel="stylesheet" href="../Styles/vistaadmin.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/Styles/vistaadmin.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
 
@@ -23,7 +23,7 @@
             <div class="nav-content">
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
-                    <li><a href="${pageContext.request.contextPath}/Index/Principal.jsp">INICIO</a></li>>
+                    <li><a href="Controlador?menu=Principal">INICIO</a></li>>
             </div>
         </nav>
 
@@ -127,7 +127,7 @@
                     <p class="card-description">Gestiona la información del Empleado, como agregar, listar, actualizar,
                         eliminar.
                     </p>
-                    <a href="${pageContext.request.contextPath}/Index/vistaempleadoadmin.jsp" class="btn_ver_gestion">Gestionar Empleados</a>
+                    <a href="Controlador?menu=vistaempleadoadmin&accion=Listar" class="btn_ver_gestion">Gestionar Empleados</a>
                 </div>
             </div>
         </div>
