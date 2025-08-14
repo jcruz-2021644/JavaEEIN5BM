@@ -17,9 +17,9 @@
             <div class="nav-content">
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
-                    <li><a href="${pageContext.request.contextPath}/Index/Principal.jsp">INICIO</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/conocenos.jsp">NOSOTROS</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaadmin.jsp">ADMINISTRACION</a></li>
+                    <li><a href="Controlador?menu=Principal">INICIO</a></li>
+                    <li><a href="Controlador?menu=conocenos">NOSOTROS</a></li>
+                    <li><a href="Controlador?menu=vistaadmin">ADMINISTRACION</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,8 +32,8 @@
                 <div class="barrabuscar">
                     <select onchange="if(this.value) window.location.href=this.value;">
                             <option value="">Selecciona categoría</option>
-                            <option value="${pageContext.request.contextPath}/Index/hombre.jsp">Hombre</option>
-                            <option value="${pageContext.request.contextPath}/Index/mujer.jsp">Mujer</option>
+                            <option value="Controlador?menu=hombre">Hombre</option>
+                            <option value="Controlador?menu=mujer">Mujer</option>
                             <option value="#">Juvenil</option>
                     </select>
                 </div>

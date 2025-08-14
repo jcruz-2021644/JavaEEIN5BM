@@ -16,10 +16,10 @@ public class EmpleadosDAO {
     int resp;
 
     public Empleados validar(String correoEmpleado, String telefonoEmpleado) {
-// instanciar el objeto de la entidad Empleado
+        // instanciar el objeto de la entidad Empleado
         Empleados empleado = new Empleados();
         //agregar una cariable de tipo string para muestra de consulta sql
-        String sql = "select * from Empleados where correoEmpleado = ? and telefonoEmpleado = ?";
+        String sql = "call sp_ValidarEmpleado(?,?)";
         try {
             con = cn.Conexion();
             ps = con.prepareCall(sql);
@@ -75,6 +75,7 @@ public class EmpleadosDAO {
             ps.setString(4, emp.getTelefonoEmpleado());
             ps.setString(5, emp.getDireccionEmpleado());
             ps.setInt(6, emp.getCodigoUsuario());
+            ps.executeQuery();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -83,4 +84,5 @@ public class EmpleadosDAO {
 
     }
 
+    
 }

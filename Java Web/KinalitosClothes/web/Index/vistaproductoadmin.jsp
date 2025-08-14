@@ -1,5 +1,6 @@
 <%-- Document : vistaproductoadmin Created on : 22 jul 2025, 13:12:45 Author : PC --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="es">
@@ -9,8 +10,8 @@
         <meta https-equiv=" X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CRUD_Producto</title>
-        <link rel="icon" type="image/x-icon" href="../Images/Logo_K.C.png">
-        <link rel="stylesheet" href="../Styles/vistaproductoadmin.css">
+        <link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/Images/Logo_K.C.png">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/Styles/vistaproductoadmin.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
 
@@ -19,15 +20,16 @@
             <div class="nav-content">
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaadmin.jsp">Menu</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaclientesadmin.jsp">Cliente</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaproveedoradmin.jsp">Proveedor</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistacategoria.jsp">Categoria</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/metodopagoadmin.jsp">Metodo P.</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistapedidoadmin.jsp">Pedido</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistadetallepedidoadmin.jsp">Detalle P.</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/VistaFacturaAdmin.jsp">Factura</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaempleadoadmin.jsp">Empleado</a></li>
+                    <li><a href="Controlador?menu=vistaadmin">Menu</a></li>
+                    <li><a href="Controlador?menu=vistaclientesadmin">Cliente</a></li>
+                    <li><a href="Controlador?menu=vistaproveedoradmin">Proveedor</a></li>
+                    <li><a href="Controlador?menu=vistacategoria">Categoria</a></li>
+                    <li><a href="Controlador?menu=metodopagoadmin">Metodo P.</a></li>
+                    <li><a href="Controlador?menu=vistaproductoadmin">Producto</a></li>
+                    <li><a href="Controlador?menu=vistapedidoadmin">Pedido</a></li>
+                    <li><a href="Controlador?menu=vistadetallepedidoadmin">Detalle P.</a></li>
+                    <li><a href="Controlador?menu=vistaempleadoadmin">Empleado</a></li>
+                    <li><a href="Controlador?menu=VistaFacturaAdmin">Factura</a></li>
                 </ul>
             </div>
         </nav>
@@ -39,40 +41,40 @@
                 <!--apartado y actualizar para crear el producto-->
                 <div class="section">
                     <h2>Agregar o actualizar producto</h2>
-                    <form>
+                    <form action="Controlador?menu=vistaproductoadmin" method="POST">
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtNombreProducto" required>
+                                <input type="text" class="entrada_texto"  name="txtNombreProducto" id="txtNombreProducto" value="${producto.getNombreProducto()}" required>
                                 <label class="label-input">Nombre Producto</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtDescripcion" required>
+                                <input type="text" class="entrada_texto" name="txtDescripcion"  id="txtDescripcion" value="${producto.getDescripcionProducto()}" required>
                                 <label class="label-input">Descripcion</label>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="entrada_texto" name="precio" step="0.01" min="0"
-                                       placeholder="0.00" id="numPrecio" required>
-                                <label class="label-input-number">Precio en Quetzales</label>
+                                <input type="text" class="entrada_texto" id="txtPrecio" name="txtPrecio" value="${producto.getPrecioProducto()}" required>
+                                <label class="label-input">Precio en Quetzales</label>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="entrada_texto" name="stock" min="0" placeholder="0"
-                                       required id="numStock">
-                                <label class="label-input-number">Stock</label>
+                                <input type="text" class="entrada_texto" name="txtTalla" id="txtTalla" value="${producto.getTalla()}" required>
+                                <label class="label-input">Talla</label>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="entrada_texto" name="codigoProveedor" min="0"
-                                       placeholder="0" required id="numCodCategoria">
-                                <label class="label-input-number">Codigo del Proveedor</label>
+                                <input type="text" class="entrada_texto" name="txtStock"id="txtStock" value="${producto.getStock()}" required>
+                                <label class="label-input">Stock</label>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="entrada_texto" name="stock" min="0" placeholder="0"
-                                       required id="numCodCategoria">
-                                <label class="label-input-number">Codigo de la Categoria</label>
+                                <input type="text" class="entrada_texto" name="txtCodigoProveedor"id="txtCodigoProveedor" value="${producto.getCodigoProveedor()}" required>
+                                <label class="label-input">Codigo del Proveedor</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="entrada_texto" name="txtCodigoCategoria" id="txtCodigoCategoria" value="${producto.getCodigoCategoria()}" required>
+                                <label class="label-input">Codigo de la Categoria</label>
                             </div>
 
                         </div>
                         <div class="form-row">
-                            <button type="button" class="btn_crear_producto">
+                            <button type="submit" class="btn_crear_producto" value="Agregar" name="accion">
                                 <span class="bnt_texto">Crear Producto</span>
                                 <span class="btn_icono">
                                     <i class="fa-solid fa-plus"></i>
@@ -117,6 +119,7 @@
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Descripción</th>
                                     <th scope="col">Precio</th>
+                                    <th scope="col">Talla</th>
                                     <th scope="col">Stock</th>
                                     <th scope="col">Codigo Proveedor</th>
                                     <th scope="col">Codigo Categoria</th>
@@ -124,32 +127,39 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Pantalon Campana</td>
-                                    <td>Pantalon tonos azules</td>
-                                    <td>Q 250.00</td>
-                                    <td>5</td>
-                                    <td>1</td>
-                                    <td>2</td>
-                                    <td>
-                                        <div class="botonesTabla">
-                                            <button type="button" class="btn_editar" id="btnEditarRegistro">
-                                                <span class="bnt_texto">Editar</span>
-                                                <span class="btn_icono">
-                                                    <i class="fa-solid fa-pen-to-square"></i>
-                                                </span>
-                                            </button>
+                                <c:forEach var="productos" items="${productos}"><tr> 
+                                        <td>${productos.getCodigoProducto()}</td>
+                                        <td>${productos.getNombreProducto()}</td>
+                                        <td>${productos.getDescripcionProducto()}</td>
+                                        <td>${productos.getPrecioProducto()}</td>
+                                        <td>${productos.getTalla()}</td>
+                                        <td>${productos.getStock()}</td>
+                                        <td>${productos.getCodigoProveedor()}</td>
+                                        <td>${productos.getCodigoCategoria()}</td>
+                                        <td>
 
-                                            <button type="button" class="btn_eliminar" id="btnEliminarRegistro">
-                                                <span class="bnt_texto">Eliminar</span>
-                                                <span class="btn_icono">
-                                                    <i class="fa fa-trash"></i></i>
-                                                </span>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
+
+                                            <div class="botonesTabla">
+                                                <button type="submit" class="btn_editar" name="btnEditarProducto" id="btnEditarProducto">
+                                                    <span class="bnt_texto">Editar</span>
+                                                    <span class="btn_icono">
+                                                        <i class="fa-solid fa-pen-to-square"></i>
+                                                    </span>
+                                                </button>
+
+                                                <button 
+                                                    type="button" 
+                                                    class="btn_eliminar" 
+                                                    onclick="window.location.href = 'Controlador?menu=vistaproductoadmin&accion=Eliminar&id=${productos.getCodigoProducto()}'">
+                                                    <span class="bnt_texto">Eliminar</span>
+                                                    <span class="btn_icono">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </c:forEach>
                             </tbody>
                         </table>
                     </div>

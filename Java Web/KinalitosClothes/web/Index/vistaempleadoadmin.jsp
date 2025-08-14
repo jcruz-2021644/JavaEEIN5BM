@@ -21,14 +21,14 @@
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
                     <li><a href="Controlador?menu=vistaadmin">Menu</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaclientesadmin.jsp">Cliente</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaproveedoradmin.jsp">Proveedor</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistacategoria.jsp">Categoria</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/metodopagoadmin.jsp">Metodo P.</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaproductoadmin.jsp">Producto</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistapedidoadmin.jsp">Pedido</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistadetallepedidoadmin.jsp">Detalle P.</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/VistaFacturaAdmin.jsp">Factura</a></li>
+                    <li><a href="Controlador?menu=vistaclientesadmin">Cliente</a></li>
+                    <li><a href="Controlador?menu=vistaproveedoradmin">Proveedor</a></li>
+                    <li><a href="Controlador?menu=vistacategoria">Categoria</a></li>
+                    <li><a href="Controlador?menu=metodopagoadmin">Metodo P.</a></li>
+                    <li><a href="Controlador?menu=vistaproductoadmin">Producto</a></li>
+                    <li><a href="Controlador?menu=vistapedidoadmin">Pedido</a></li>
+                    <li><a href="Controlador?menu=vistadetallepedidoadmin">Detalle P.</a></li>
+                    <li><a href="Controlador?menu=VistaFacturaAdmin">Factura</a></li>
                 </ul>
             </div>
         </nav>
@@ -62,11 +62,11 @@
                                 <label class="label-input">Dirección</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" name="txtCodigoUsuario"  id="txtCodigoUsuario" value="${empleado.getCodigoUsuario()}" required>
+                                <input type="text" class="entrada_texto" name="txtCodigoUsuario" id="txtCodigoUsuario" value="${empleado.getCodigoUsuario()}" required>
                                 <label class="label-input">Codigo de Usuario</label>
                             </div>
 
-                            <button type="submit" class="btn_crear_producto" values="Agregar">
+                            <button type="submit" class="btn_crear_producto" value="Agregar" name="accion">
                                 <span class="bnt_texto">Crear Empleado</span>
                                 <span class="btn_icono">
                                     <i class="fa-solid fa-plus"></i>

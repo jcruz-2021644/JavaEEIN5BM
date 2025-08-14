@@ -15,9 +15,9 @@
         <nav class="nav">
             <a href="#" class="logo">KC</a>
             <ul class="nav-links">
-                <li><a href="${pageContext.request.contextPath}/Index/Principal.jsp">INICIO</a></li>
-                <li><a href="${pageContext.request.contextPath}/Index/vistaproducto.jsp">TIENDA</a></li>
-                <li><a href="${pageContext.request.contextPath}/Index/conocenos.jsp">NOSOTROS</a></li>
+                <li><a href="Controlador?menu=Principal">INICIO</a></li>
+                <li><a href="Controlador?menu=vistaproducto">TIENDA</a></li>
+                <li><a href="Controlador?menu=conocenos">NOSOTROS</a></li>
             </ul>
         </nav>
     </header>
@@ -58,9 +58,9 @@
             </div>
 
             <div class="pedido-actions">
-                <a href="vistadetallepedido.jsp" class="btn btn-primary">Ver Detalles</a>
-                <a href="VistaFacturaCliente.jsp" class="btn btn-secondary">Ver Factura</a>
-                <a href="MetodoPago.jsp" class="btn btn-primary">Metodo Pago </a>
+                <a href="Controlador?menu=vistadetallepedido" class="btn btn-primary">Ver Detalles</a>
+                <a href="Controlador?menu=VistaFacturaCliente" class="btn btn-secondary">Ver Factura</a>
+                <a href="Controlador?menu=MetodoPago" class="btn btn-primary">Metodo Pago </a>
             </div>
         </div>
 
@@ -96,9 +96,9 @@
             </div>
 
             <div class="pedido-actions">
-                <a href="vistadetallepedido.jsp" class="btn btn-primary">Ver Detalles</a>
-                <a href="VistaFacturaCliente.jsp" class="btn btn-secondary">Ver Factura</a>
-                <a href="MetodoPago.jsp" class="btn btn-primary">Metodo Pago </a>
+                <a href="Controlador?menu=vistadetallepedido" class="btn btn-primary">Ver Detalles</a>
+                <a href="Controlador?menu=VistaFacturaCliente" class="btn btn-secondary">Ver Factura</a>
+                <a href="Controlador?menu=MetodoPago" class="btn btn-primary">Metodo Pago </a>
             </div>
         </div>
 
@@ -134,19 +134,13 @@
             </div>
 
             <div class="pedido-actions">
-                <a href="vistadetallepedido.jsp" class="btn btn-primary">Ver Detalles</a>
-                <a href="VistaFacturaCliente.jsp" class="btn btn-secondary">Ver Factura</a>
-                <a href="MetodoPago.jsp" class="btn btn-primary">Metodo Pago </a>
+                <a href="Controlador?menu=vistadetallepedido" class="btn btn-primary">Ver Detalles</a>
+                <a href="Controlador?menu=VistaFacturaCliente" class="btn btn-secondary">Ver Factura</a>
+                <a href="Controlador?menu=MetodoPago" class="btn btn-primary">Metodo Pago </a>
             </div>
         </div>
 
-        <!-- Estado vacío (comentado para mostrar con pedidos)
-        <div class="empty-state">
-            <h3>No tienes pedidos aún</h3>
-            <p>Cuando realices tu primera compra, aparecerá aquí.</p>
-            <a href="#" class="btn btn-primary">Ir a la Tienda</a>
-        </div>
-        -->
+        
     </main>
 </body>
 </html>

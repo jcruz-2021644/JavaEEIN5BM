@@ -29,7 +29,7 @@ Create table Categorias(
     rangoEdad enum('Infantil', 'Juvenil', 'Adultos') not null,
     primary key PK_codigoCategoria (codigoCategoria)
 );
-
+select*from Empleados;
 -- Metodo Pagos
 Create table MetodoPagos(
 	codigoMetodoPago int auto_increment,
@@ -616,7 +616,6 @@ Delimiter //
         End //
 Delimiter ;
 call sp_ListarClientes();
-
 -- Eliminar Cliente
 Delimiter //
 	Create procedure sp_EliminarCliente(
@@ -1154,3 +1153,14 @@ call sp_EditarFactura(17, '2025-07-02', 5.00, 425.20, 'Emitida', 'Electronica', 
 call sp_EditarFactura(18, '2025-07-03', 15.00, 950.10, 'Emitida', 'Fisica', 18, 18);
 call sp_EditarFactura(19, '2025-07-04', 0.00, 299.90, 'Anulada', 'Fisica', 19, 19);
 call sp_EditarFactura(20, '2025-07-05', 20.00, 625.55, 'Emitida', 'Electronica', 20, 20);
+
+delimiter //
+create procedure sp_ValidarEmpleado(
+    in correoE varchar(150),
+    in telefonoE varchar (20)
+)
+BEGIN
+    select codigoEmpleado, nombreEmpleado,apellidoEmpleado,correoEmpleado,telefonoEmpleado,direccionEmpleado, codigoUsuario 
+    from Empleados where correoEmpleado = correoE and telefonoEmpleado = telefonoE;
+end //
+delimiter ;

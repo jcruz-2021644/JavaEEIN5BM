@@ -7,8 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CRUD_Cliente</title>
-        <link rel="icon" type="image/x-icon" href="../Images/Logo_K.C.png">
-        <link rel="stylesheet" href="../Styles/vistaclientesadmin.css">
+        <link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/Images/Logo_K.C.png">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/Styles/vistaclientesadmin.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
 
@@ -17,15 +17,15 @@
             <div class="nav-content">
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaadmin.jsp">Menu</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaproveedoradmin.jsp">Proveedor</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistacategoria.jsp">Categoria</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/metodopagoadmin.jsp">Metodo P.</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaproductoadmin.jsp">Producto</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistapedidoadmin.jsp">Pedido</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistadetallepedidoadmin.jsp">Detalle P.</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/VistaFacturaAdmin.jsp">Factura</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaempleadoadmin.jsp">Empleado</a></li>
+                    <li><a href="Controlador?menu=vistaadmin">Menu</a></li>
+                    <li><a href="Controlador?menu=vistaproveedoradmin">Proveedor</a></li>
+                    <li><a href="Controlador?menu=vistacategoria">Categoria</a></li>
+                    <li><a href="Controlador?menu=metodopagoadmin">Metodo P.</a></li>
+                    <li><a href="Controlador?menu=vistaproductoadmin">Producto</a></li>
+                    <li><a href="Controlador?menu=vistapedidoadmin">Pedido</a></li>
+                    <li><a href="Controlador?menu=vistadetallepedidoadmin">Detalle P.</a></li>
+                    <li><a href="Controlador?menu=vistaempleadoadmin">Empleado</a></li>
+                    <li><a href="Controlador?menu=VistaFacturaAdmin">Factura</a></li>
                 </ul>
             </div>
         </nav>
@@ -40,33 +40,32 @@
                     <form>
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtNombreCliente" required>
+                                <input type="text" class="entrada_texto"  id="txtNombreCliente" name="txtNombreCliente" value="${empleado.getNombreEmpleado()}" required>
                                 <label class="label-input">Nombre Cliente</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtApellidoCliente" required>
+                                <input type="text" class="entrada_texto" id="txtApellidoCliente" name="txtApellidoCliente" required>
                                 <label class="label-input">Apellido Cliente</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtCorreoCliente" required>
+                                <input type="text" class="entrada_texto" id="txtCorreoCliente" name="txtCorreoCliente" required>
                                 <label class="label-input">Correo</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtTelefonoCliente" required>
+                                <input type="text" class="entrada_texto" id="txtTelefonoCliente" name="txtTelefonoCliente" required>
                                 <label class="label-input">Telefono</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="entrada_texto" id="txtDireccionCliente" required>
+                                <input type="text" class="entrada_texto" id="txtDireccionCliente" name="txtDireccionCliente" required>
                                 <label class="label-input">Direccion</label>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="entrada_texto" id="CodigoUsuario" name="stock" min="0" placeholder="0"
-                                    required>
-                                <label class="label-input-number">Codigo del Usuario</label>
+                                <input type="text" class="entrada_texto" id="txtCodigoUsuario" name="txtCodigoUsuario" required>
+                                <label class="label-input">Codigo del Usuario</label>
                             </div>
                         </div>
                         <div class="form-row">
-                            <button type="button" class="btn_crear" id="btnCrearCliente">
+                            <button type="button" class="btn_crear" id="btnCrearCliente" name="accion" value="Agregar">
                                 <span class="btn_texto">Crear Cliente</span>
                                 <span class="btn_icono">
                                     <i class="fa-solid fa-plus"></i>

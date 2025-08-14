@@ -24,16 +24,16 @@
             <div class="nav-content">
                 <div class="logo">K<span>C</span></div>
                 <ul class="menu">
-                    <li><a href="${pageContext.request.contextPath}/index.jsp">INICIO</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/conocenos.jsp">NOSOTROS</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/vistaproducto.jsp">TIENDA</a></li>
+                    <li><a href="Controlador?menu=index">INICIO</a></li>
+                    <li><a href="Controlador?menu=conocenos">NOSOTROS</a></li>
+                    <li><a href="Controlador?menu=vistaproducto">TIENDA</a></li>
                     <li><a href="Controlador?menu=vistaadmin">ADMINISTRACION</a></li>
-                    <li><a href="${pageContext.request.contextPath}/Index/mispedidos.jsp">MIS PEDIDOS</a></li>
+                    <li><a href="Controlador?menu=mispedidos">MIS PEDIDOS</a></li>
                 </ul>
                 <div class="iconos">
                     <a href="#"><i class="fa fa-search"></i></a>
-                    <a href="${pageContext.request.contextPath}/Index/mispedidos.jsp"><i class="fa fa-shopping-cart"></i></a>
-                    <a href="${pageContext.request.contextPath}/Index/VistaUsuarioCliente.jsp" class="logo-usuario">
+                    <a href="Controlador?menu=mispedidos"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="Controlador?menu=VistaUsuarioCliente" class="logo-usuario">
                         <img src="${pageContext.request.contextPath}/Images/Logo_K.C.png" alt="Usuario">
                     </a>
                 </div>
@@ -44,7 +44,7 @@
                 <span class="descuento">hasta 30% de descuento</span>
                 <h1>LA MEJOR ROPA URBANA</h1>
                 <h2>PARA TU ESTILO UNICO</h2>
-                <a href="${pageContext.request.contextPath}/Index/vistaproducto.jsp" class="btn-coleccion">VER COLECCION</a>
+                <a href="Controlador?menu=vistaproducto." class="btn-coleccion">VER COLECCION</a>
             </div>
         </section>
         <!-- SECTOR 2: OFERTAS DESTACADAS -->
@@ -54,7 +54,7 @@
                 <div class="oferta-info">
                     <h3>OFERTA DEL DIA</h3>
                     <p>Hasta 45% de descuento en camicetas</p>
-                    <a href="${pageContext.request.contextPath}/Index/vistaproducto.jsp" class="btn-oferta">COMPRAR AHORA</a>
+                    <a href="Controlador?menu=vistaproducto" class="btn-oferta">COMPRAR AHORA</a>
                 </div>
             </div>
             <div class="oferta">
@@ -62,14 +62,14 @@
                 <div class="oferta-info">
                     <h3>EL MAS VENDIDO</h3>
                     <p>Precio desde $100</p>
-                    <a href="${pageContext.request.contextPath}/Index/vistaproducto.jsp" class="btn-oferta">COMPRAR AHORA</a>
+                    <a href="Controlador?menu=vistaproducto" class="btn-oferta">COMPRAR AHORA</a>
                 </div>
             </div>
         </section>
         <!-- SECTOR 3: NUEVOS PRODUCTOS -->
         <section id="NuevosProductos" class="nuevos-productos-titulo">
             <h2>NUEVOS PRODUCTOS</h2>
-            <a href="${pageContext.request.contextPath}/Index/vistaproducto.jsp" class="btn-ver-todo">VER TODO</a>
+            <a href="Controlador?menu=vistaproducto" class="btn-ver-todo">VER TODO</a>
         </section>
         <section class="acciones-imagenes-con-flechas">
             <button class="carrusel-flecha flecha-izq" aria-label="Anterior">
@@ -208,7 +208,7 @@
         <!-- SECTOR 5: PRODUCTOS DESTACADOS Y ARTÃCULOS DE MODA -->
         <section class="nuevos-productos-titulo">
             <h2>PRODUCTOS DESTACADOS</h2>
-            <a href="${pageContext.request.contextPath}/Index/vistaproducto.jsp" class="btn-ver-todo">VER TODO</a>
+            <a href="Controlador?menu=vistaproducto" class="btn-ver-todo">VER TODO</a>
         </section>
         <section class="acciones-imagenes-con-flechas">
             <button class="carrusel-flecha flecha-izq" aria-label="Anterior">
@@ -250,7 +250,7 @@
         </section>
         <section class="nuevos-productos-titulo">
             <h2>ARTICULOS DE MODA</h2>
-            <a href="${pageContext.request.contextPath}/Index/vistaproducto.jsp" class="btn-ver-todo">VER TODO</a>
+            <a href="Controlador?menu=vistaproducto" class="btn-ver-todo">VER TODO</a>
         </section>
         <section class="acciones-imagenes-con-flechas">
             <button class="carrusel-flecha flecha-izq" aria-label="Anterior">
